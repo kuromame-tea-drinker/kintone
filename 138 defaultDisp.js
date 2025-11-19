@@ -51,7 +51,7 @@
       }else{
         event.record.検討会確度.disabled  = false;
       }
-
+/*
       const array = ['②製品提案', '③見積提出', '④検討会', '★正式受注'];
 
       array.forEach((field) => {
@@ -62,7 +62,7 @@
           kintone.app.record.setFieldShown('提案サンプル着日', false);
         }
       })
-
+*/
 
       const space = kintone.app.record.getSpaceElement('fabricButton');
 
@@ -80,7 +80,7 @@
       }
       
     }
-
+/*
     if(event.type === 'app.record.create.change.案件フェーズ' || event.type === 'app.record.edit.change.案件フェーズ'){
       const fase = event.record.案件フェーズ.value;
       switch(fase){
@@ -94,7 +94,7 @@
         break
       }
     }
-
+*/
     if(event.type === 'app.record.edit.show'){
       
       if(event.record.案件フェーズ.value === '④検討会' && !event.record.フェーズ検討会日付.value){
@@ -214,3 +214,4 @@
     
   });
 })();
+
